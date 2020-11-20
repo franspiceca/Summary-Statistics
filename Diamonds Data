@@ -1,5 +1,6 @@
 import numpy as np
-from seaborn import load_dataset 
+from seaborn import load_dataset
+import seaborn as sns
 
 from seaborn import load_dataset
 df = load_dataset("diamonds")
@@ -15,3 +16,9 @@ np.median(df['price'])
 percentiles = np.array([2.5, 25, 50, 75, 97.5])
 diamonds_percentiles = np.percentile(df['price'], percentiles)
 print(diamonds_percentiles)
+
+#Boxplot to show summary stats on price and cut
+_ = sns.boxplot(x='cut', y='price', data=df)
+_ = plt.xlabel('cut')
+_ = plt.ylabel('price')
+plt.show()
