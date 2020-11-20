@@ -38,3 +38,14 @@ print(price_std)
 #Covariance of price and carat
 diamonds_co = np.cov(df['price'], df['carat'])
 print(diamonds_co)
+
+#Define correlation matrix
+def diamonds_correlation(x, y):
+    corr_mat = np.corrcoef(x, y)
+    return corr_mat[0,1]
+
+#Compute Pearson correlation coefficient
+d = diamonds_correlation(df['price'], df['carat'])
+
+# Print the result
+print(d)
