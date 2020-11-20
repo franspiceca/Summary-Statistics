@@ -34,3 +34,7 @@ print(price_sqrt)
 #Standard deviation of price to compare
 price_std = np.std(df['price'])
 print(price_std)
+
+#Covariance of price and carat
+diamonds_co = np.cov(df['price'], df['carat'])
+print(diamonds_co)
