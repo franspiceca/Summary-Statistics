@@ -10,3 +10,8 @@ np.mean(df['price'])
 
 #Median price
 np.median(df['price'])
+
+#Percentiles of price data
+percentiles = np.array([2.5, 25, 50, 75, 97.5])
+diamonds_percentiles = np.percentile(df['price'], percentiles)
+print(diamonds_percentiles)
