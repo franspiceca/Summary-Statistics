@@ -1,0 +1,6 @@
+import numpy as np
+from seaborn import load_dataset 
+
+from seaborn import load_dataset
+df = load_dataset("diamonds")
+df.head()
