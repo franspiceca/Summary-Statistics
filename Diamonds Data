@@ -4,3 +4,9 @@ from seaborn import load_dataset
 from seaborn import load_dataset
 df = load_dataset("diamonds")
 df.head()
+
+#Mean price
+np.mean(df['price'])
+
+#Median price
+np.median(df['price'])
