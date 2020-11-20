@@ -22,3 +22,15 @@ _ = sns.boxplot(x='cut', y='price', data=df)
 _ = plt.xlabel('cut')
 _ = plt.ylabel('price')
 plt.show()
+
+#Variance of price to start
+price_variance = np.var(df['price'])
+print(price_variance)
+
+#Square root of price to compare
+price_sqrt = np.sqrt(df['price'])
+print(price_sqrt)
+
+#Standard deviation of price to compare
+price_std = np.std(df['price'])
+print(price_std)
